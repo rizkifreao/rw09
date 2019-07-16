@@ -30,7 +30,7 @@ class Entry extends CI_Controller {
 		$this->form_validation->set_rules('id', 'id', 'required');
 		$this->form_validation->set_rules('no_kk', 'no_kk', 'required');
 		$this->form_validation->set_rules('rt', 'rt', 'required');
-		$this->form_validation->set_rules('rw', 'rw', 'required');
+		// $this->form_validation->set_rules('rw', 'rw', 'required');
 		$id=$_POST['no_kk'];
 		$cek=$this->db->query("select * from kk where no_kk='$id'")->num_rows();
 		if($this->form_validation->run()==FALSE){
@@ -44,7 +44,7 @@ class Entry extends CI_Controller {
 				"id_kk"=>$_POST['id'],
 				"no_kk"=>$_POST['no_kk'],
 				"rt"=>$_POST['rt'],
-				"rw"=>$_POST['rw'],
+				// "rw"=>$_POST['rw'],
 				"kk"=>"",
 				"status"=>1,
 			);
@@ -84,7 +84,7 @@ class Entry extends CI_Controller {
 		$this->form_validation->set_rules('id', 'id', 'required');
 		$this->form_validation->set_rules('no_kk', 'no_kk', 'required');
 		$this->form_validation->set_rules('rt', 'rt', 'required');
-		$this->form_validation->set_rules('rw', 'rw', 'required');
+		// $this->form_validation->set_rules('rw', 'rw', 'required');
 		$id=$_POST['id'];
 		$cek=$this->db->query("select * from kk where no_kk='$id'")->num_rows();
 		if($this->form_validation->run()==FALSE){
@@ -97,7 +97,7 @@ class Entry extends CI_Controller {
 			$data=array(
 				"no_kk"=>$_POST['no_kk'],
 				"rt"=>$_POST['rt'],
-				"rw"=>$_POST['rw'],
+				// "rw"=>$_POST['rw'],
 			);
 			$this->db->where('id_kk', $id);
 			$this->db->update('kk',$data);

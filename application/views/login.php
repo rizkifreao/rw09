@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>LOGIN SIPUDES</title>
+	<title>LOGIN SISKEP</title>
 
 	<!-- Global stylesheets -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
@@ -29,7 +29,7 @@
 
 	<!-- Main navbar -->
 	<div class="navbar navbar-inverse">
-		<h3><marquee><strong>Selamat Datang Di SIPUDES(Sistem Informasi Pusat Data Desa) Desa <?php echo getnamains('desa'); ?> Kecamatan <?php echo getnamains('kecamatan'); ?> Kabupaten <?php echo getnamains('kabupaten'); ?></strong></marquee></h3>
+		<h3><marquee><strong>Selamat Datang Di SISKEP(Sistem Informasi Kependudukan ) <?php echo getnamains('desa'); ?> Kecamatan <?php echo getnamains('kecamatan'); ?> Kelurahan <?php echo getnamains('kabupaten'); ?></strong></marquee></h3>
 	</div>
 	<!-- /main navbar -->
 
@@ -51,7 +51,7 @@
 						<div class="panel panel-body login-form">
 							<div class="text-center">
 								<div class="icon-object border-slate-300 text-slate-300"><i class="icon-reading"></i></div>
-								<h5 class="content-group">LOGIN SIPUDES</h5>
+								<h5 class="content-group">LOGIN SISKEP</h5>
 							</div>
 							<?php 
 							$data=$this->session->flashdata('sukses');
@@ -83,7 +83,7 @@
 						</div>
 					</form>
 					<div class="footer text-muted">
-						&copy; 2016. <a href="http://www.muhajirulfaqih.blogspot.com" target="blank">Ahmad Muhajirul Faqih</a>
+						&copy; 2018. <a href="http://www.lpkia.ac.id" target="blank">LPKIA | 3IFP-02 | Kelompok 3</a>
 					</div>
 					<!-- /footer -->
 

@@ -18,7 +18,7 @@ class M_laporan extends CI_Model {
 			$and1="";
 		}
 		if($status!=""){
-			$and2="AND status='$status'";
+			$and2="AND penduduk.status='$status'";
 		}else{
 			$and2="";
 		}

@@ -18,11 +18,11 @@ if($data2!=""){ ?>
    <table class="table table-bordered datatable-columns">
       <thead>
           <tr>
-              <th>Nomor</th>
+              <th width="30">Nomor</th>
               <th>No KK</th>
               <th>RT</th>
               <th class="never"></th>
-              <th>RW</th>
+              <!-- <th>RW</th> -->
               <th>Jumlah Individu</th>
               <th>Kepala Keluarga</th>
               <th><center>Opsi</center></th>
@@ -36,7 +36,7 @@ if($data2!=""){ ?>
                 <td><?php echo $row->rt; ?></td>
                 <td><?php echo $no; ?></td>
                 <?php $kk=$row->id_kk; ?>
-                <td><?php echo $row->rw; ?></td>
+                <!-- <td><?php echo $row->rw; ?></td> -->
                 <td><?php echo $this->db->query("select * from penduduk where id_kk='$kk'")->num_rows();?></td>
                 <td><?php if($row->kk==""){echo "<i>Belum Di Update</i>";}else{echo getnama($row->kk);}?></td>
                 <td>
@@ -72,10 +72,10 @@ if($data2!=""){ ?>
           <div class='col-md-9'><input type="text" name="rt" autocomplete="off" required placeholder="Masukkan RT" class="form-control" ></div>
         </div>
         <br>
-        <div class="form-group">
+        <!-- <div class="form-group">
           <label class='col-md-3'>RW</label>
           <div class='col-md-9'><input type="text" name="rw" autocomplete="off" required placeholder="Masukkan RW" class="form-control" ></div>
-        </div>
+        </div> -->
         <br>
       </div>
         <div class="modal-footer">

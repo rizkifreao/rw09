@@ -17,7 +17,7 @@ if($data2!=""){ ?>
   <div class="panel-body">
    <table class="table table-bordered">
         <tr>
-            <th>Desa</th>
+            <th>Rw</th>
             <td><?php echo $getrow['desa']; ?></td>
         </tr>
         <tr>
@@ -25,7 +25,7 @@ if($data2!=""){ ?>
             <td><?php echo $getrow['kecamatan']; ?></td>
         </tr>
         <tr>
-            <th>Kabupaten</th>
+            <th>Kelurahan</th>
             <td><?php echo $getrow['kabupaten']; ?></td>
         </tr>
         <tr>
@@ -45,7 +45,7 @@ if($data2!=""){ ?>
         </div>
         <div class="modal-body">
           <div class="form-group">
-            <label class='col-md-3'>Desa</label>
+            <label class='col-md-3'>Rw</label>
             <div class='col-md-9'><input type="text" value="<?php echo $getrow['desa']; ?>" name="desa" autocomplete="off" required placeholder="Masukkan Desa" class="form-control" ></div>
           </div>
           <br>
@@ -55,7 +55,7 @@ if($data2!=""){ ?>
           </div>
           <br>
           <div class="form-group">
-            <label class='col-md-3'>Kabupaten</label>
+            <label class='col-md-3'>Kelurahan</label>
             <div class='col-md-9'><input type="text" name="kabupaten" value="<?php echo $getrow['kabupaten']; ?>" autocomplete="off" required placeholder="Masukkan Kabupaten" class="form-control" ></div>
           </div>
           <br>

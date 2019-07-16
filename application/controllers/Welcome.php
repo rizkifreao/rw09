@@ -13,6 +13,22 @@ class Welcome extends CI_Controller {
 		$this->breadcrumb->initialize($config);
 		no_access();
 	}
+	public function test($param = null)
+	{	
+		$id_project = $this->input->post('id_project');
+		if (!$param) {
+			$data["id_project"] = "Data default dashboard";
+		}else {
+			$data["id_project"] = $id_project;
+		}
+		$this->load->view('Dashboard',$data);
+	}
+
+	public function getDashboard(Type $var = null)
+	{
+		
+	}
+
 	public function index()
 	{
 		$data=array(
