@@ -23,7 +23,7 @@
             </ul>
           </li>
           <li class="<?php echo menuaktif('user',$aktif); ?>"><a href="<?php echo site_url('User'); ?>"><i class="icon-collaboration"></i> <span>Manajemen Akses</span></a></li>
-          <li class="<?php echo menuaktif('ins',$aktif); ?>"><a href="<?php echo site_url('Ins'); ?>"><i class="icon-city"></i> <span>Manajemen Desa</span></a></li>
+          <li class="<?php echo menuaktif('ins',$aktif); ?>"><a href="<?php echo site_url('Ins'); ?>"><i class="icon-city"></i> <span>Configurasi Sistem</span></a></li>
         </ul>
       </div>
     </div>
